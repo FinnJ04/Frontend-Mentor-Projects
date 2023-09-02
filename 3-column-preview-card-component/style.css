@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+/* BOXES */
+.boxes{
+    padding: 40px;
+    width: 210px;
+    height: 380px;
+}
+#box1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0px 0px 5px;
+}
+#box2{
+    background-color: hsl(184, 100%, 22%);
+}
+#box3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+/* TEXT */
+
+p.bigtext{
+    margin: 25px 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2em;
+    color: hsl(0, 0%, 95%);
+}
+.smalltext{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color:hsla(0, 0%, 100%, 0.75);
+    line-height: 1.6;
+    margin-bottom: 80px;
+}
+
+
+/* BUTTON */
+
+.button{
+    background-color: hsl(0, 0%, 95%);
+    padding: 12px 30px;
+    border-radius: 25px;
+    border: none;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+#b1{
+    color: hsl(31, 77%, 52%);
+}
+#b2{
+    color: hsl(184, 100%, 22%);
+}
+#b3{
+    color: hsl(179, 100%, 13%);
+}
+#b1:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+#b2:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+#b3:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+/* MEDIAQUERY */
+@media all and (max-width: 600px){
+    .container{
+        flex-direction: column;
+    }
+    #box1{
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+    #box3{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+    }
+    .smalltext{
+        margin-bottom: 20px;
+    }
+    .boxes{
+        width: 230px;
+        height: 320px;
+    }
+}
+
+/* ATTRIBUTION */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
