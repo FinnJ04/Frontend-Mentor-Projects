@@ -107,6 +107,10 @@ p.bigtext{
         width: 230px;
         height: 320px;
     }
+    main{
+        height: fit-content;
+        padding: 40px 0;
+    }
 }
 
 /* ATTRIBUTION */
