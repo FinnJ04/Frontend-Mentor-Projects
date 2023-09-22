@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color:hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    padding-top: 50px;
+    gap: 20px 0;
+}
+article{
+    grid-column: 2/3;
+    padding: 20px 25px 30px 30px;
+    border-radius: 5px;
+}
+
+/* first card */
+
+article:first-child{
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% top;
+}
+article:first-child .paragraph{
+    color: hsla(0, 0%, 100%, 0.50);
+}
+
+/* second card */
+
+article:nth-child(2) .paragraph{
+    color: hsla(0, 0%, 100%, 0.50);;
+}
+article:nth-child(2){
+    background-color:hsl(217, 19%, 35%);
+}
+
+
+/* Third Card */
+
+article:nth-child(3){
+    background-color: hsl(0, 0%, 100%);
+}
+article:nth-child(3) h1{
+    color: hsl(217, 19%, 35%);
+}
+article:nth-child(3) .account .name{
+    color: hsl(217, 19%, 35%);
+}
+article:nth-child(3) .account .VG{
+    color: hsla(217, 19%, 35%, 0.50);;
+}
+article:nth-child(3) .paragraph{
+    color: hsl(217, 19%, 35%, 0.8);
+}
+
+/* fourth card */
+
+article:nth-child(4){
+    background-color: hsl(219, 29%, 14%);
+}
+article:nth-child(4) img{
+    border: 2px solid hsl(263, 55%, 52%);
+}
+article:nth-child(4) .paragraph{
+    color: hsl(0, 0%, 100%, 0.50);
+}
+
+/* last card */
+
+article:nth-child(5){
+    background-color: hsl(0, 0%, 100%);
+}
+article:nth-child(5) .name{
+    color: hsl(217, 19%, 35%);
+}
+article:nth-child(5) .VG{
+    color:hsla(217, 19%, 35%, 0.50);
+}
+article:nth-child(5) h1{
+    color: hsl(217, 19%, 35%);
+}
+article:nth-child(5) .paragraph{
+    color:hsla(217, 19%, 35%, 0.80);
+}
+
+/* Basis */
+
+.account{
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+}
+img{
+    border-radius: 100px;
+    border: 2px solid hsla(0, 0%, 100%, 0.50);
+    height: 30px;
+    grid-row: 1/3;
+    margin-right: 10px;
+}
+.name{
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    grid-column: 2/3;
+    overflow: visible;
+}
+.VG{
+    color: hsla(0, 0%, 100%, 0.50);
+    font-weight: 500;
+    grid-column: 2/3;
+
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 1.47em;
+    padding: 20px 0;
+}
+.paragraph{
+    color: hsl(0, 0%, 81%);
+    font-weight: 500;
+}
+
+/* attribution */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    grid-column: 2/3;
+    margin-bottom: 40px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media (min-width:768px){
+    main{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr auto 1fr;
+        height: 100vh;
+        padding: 0 5%;
+    }
+    .container{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        max-width: 1296px;
+    }
+
+    .grid-col-span-2{
+        grid-column: span 2;
+    }
+
+    article{
+        grid-column: span 1;
+    }
+
+    article:nth-child(5){
+        grid-column: 4/5;
+        grid-row: 1 / span 2;
+    }   
+    .attribution{
+        grid-column: 2/4;
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
